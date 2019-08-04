@@ -267,7 +267,7 @@ input[type=submit] {
     @media screen and (max-width: 640px) {
 
         .mainportfolio-section {
-            width:600px;
+            width:400px;
             height:700px;
             margin-right: 5px;
             margin-left: 5px;
@@ -276,7 +276,7 @@ input[type=submit] {
       
         .maincontact-section {
             
-            width: 600px;
+            width: 550px;
             height: 500px;
             margin-bottom: 300px;
             margin-right: 5px;
@@ -284,10 +284,10 @@ input[type=submit] {
             margin-top: 10px;
 
     
-           }
+        }
 
            .mainabout-section {
-            width: 600px;
+            width: 550px;
             height: 400px;
             margin-bottom: 100px;
             margin-right: 5px;
@@ -295,7 +295,7 @@ input[type=submit] {
             margin-top: 10px;
             
             
-        }
+            }
         
         body {
             font-size: 15px;
@@ -314,15 +314,12 @@ input[type=submit] {
 
 
 
-
-
-    }
         @media screen and (max-width: 768px) {
             .mainportfolio-section {
-            width:745px;
+            width:755px;
             height:700px;
-            margin-right: 10px;
-            margin-left: 10px;
+            margin-right: 5px;
+            margin-left: 5px;
 
         }
          
@@ -364,9 +361,6 @@ input[type=submit] {
         
         }
     }
-
-
-
 
 
     @media screen and (max-width: 980px) {
