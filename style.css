@@ -12,7 +12,6 @@ color: #777777;
 
 .container {
 width: 100%;
-max-width: 960px;
 margin: 0 auto;
 clear: both;
 
@@ -35,7 +34,7 @@ h1,h2,h3 {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 49px;
     border-bottom: 3px solid #dddddd;
     padding-bottom: 20px;
@@ -49,13 +48,14 @@ h2,h3 {
 /*header*/
 #mastheader {
 
+
 background: #ffffff;
 margin: 0 0 30px;
 z-index: 99;
 color: #ffffff;
 overflow: auto;
 border-bottom: 2px solid #cccccc;
-position: fixed;
+position:fixed;
 width: 100%;
 
 }
@@ -63,17 +63,18 @@ width: 100%;
   
 
 #logo {
-    width: 315px;
-    height: 90px;
+    width: 200px;
+    height: 65px;
     background: #4aaaa5;
     float:left;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     line-height: 90px;
     color: #ffffff;
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 100;
+    font-size: 20px;
     text-decoration: none;
+    margin-left: 20px;
 
 }
 
@@ -85,7 +86,7 @@ margin-top:25px;
 
 nav a {
 color: #999999;
-text decoration: none;
+text-decoration: none;
 margin-left: 15px;
 display: inline block;
 border-left: 1 px solid #efefef;
@@ -100,25 +101,25 @@ nav a:first-child {
 
 /*main*/
 #main-container {
-    padding-top: 75px;
+    padding-top: 120px;
+    min-height: calc(100vh - 70px);
 }
 
-.main-section {
+.mainabout-section {
 
     background: #ffffff;
     padding: 30px;
     margin: 0 0 40px 0;
     width: 100%;
-    max-width: 980px;
+    max-width: 960px;
     float: left;
     border: 1px solid #dddddd;
 }
 
-
-.auth-image {
+#auth-image {
 
     width: 200px;
-    height: auto;
+    height: 200px;
     margin-top: 10px;
     float: left;
     margin-right: 25px;
@@ -126,27 +127,47 @@ nav a:first-child {
 
 }
 
-/*footer*/
+.responsive {
+    width: 100%;
+    height: auto;
+  }
 
+
+/*footer*/
 footer {
+    position: static;
     background: #666666;
     color: #ffffff;
-    padding: 30px 0;
     clear: both;
-    border-top: 8px solid #4aaaa5;
+    border-top: 2px solid #4aaaa5;
     color: #cccccc;
     font-size: 12px;
-    text-align: center;
-
+    text-align: center;    
+    height: 50px;
+    padding: 10px;
+    width:100%;
 }
 
-/*portfolio*/
 
-.work {
-    width: 400px;    
+  
+/*portfolio*/
+.mainportfolio-section {
+
+    background: #ffffff;
+    padding: 30px;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width: 960px;
+    float: left;
+    border: 1px solid #dddddd;
+}
+
+.work {  
     position: relative;
     float: left;
-    margin: 20px 10px 25px 10px;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
     }
 
 
@@ -163,24 +184,38 @@ footer {
     text-align: center;
     position: absolute;
     bottom: 30px;
-    padding: 15px;
-    width: 100%;
+    padding: 1px;
+    width: 200px;
     line-height: 30px;
     margin: 0 0 0 30px;
     font-weight: 300;
 } 
 
-.port-image {
+#port-image  {
 
-    width: 300px;
-    height: 315px;
+    width: 200px;
+    height: 200px;
     margin: 10px 50px 10px 30px;
     float: left;
-    margin-right: 0px;
+    
 
 }
 
+
+
 /*contact*/
+
+.maincontact-section {
+
+    background: #ffffff;
+    padding: 30px;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width: 960px;
+    float: left;
+    border: 1px solid #dddddd;
+}
+
 
 #contact-form ul {
     margin-bottom: 20px;
@@ -213,8 +248,8 @@ textarea {
 
 
 textarea {
-    height: 200px;
-    width: 900px;
+    height: 100px;
+    
 }
 
 input[type=submit] {
@@ -222,7 +257,166 @@ input[type=submit] {
     background: #4aaaa5;
     border: 0 none;
     color: #ffffff;
-    font-size: 18px;
-    padding: 20px 30px;
+    font-size: 15px;
+    padding: 5px;
     cursor: pointer;
 }
+
+
+   
+    @media screen and (max-width: 640px) {
+
+        .mainportfolio-section {
+            width:600px;
+            height:700px;
+            margin-right: 5px;
+            margin-left: 5px;
+
+        }
+      
+        .maincontact-section {
+            
+            width: 600px;
+            height: 500px;
+            margin-bottom: 300px;
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 10px;
+
+    
+           }
+
+           .mainabout-section {
+            width: 600px;
+            height: 400px;
+            margin-bottom: 100px;
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 10px;
+            
+            
+        }
+        
+        body {
+            font-size: 15px;
+            line-height: 22px;
+
+        }
+
+        #auth-image {
+
+            width: 100px;
+            height: 100px;
+        
+        
+        }
+    }
+
+
+
+
+
+    }
+        @media screen and (max-width: 768px) {
+            .mainportfolio-section {
+            width:745px;
+            height:700px;
+            margin-right: 10px;
+            margin-left: 10px;
+
+        }
+         
+        
+         .maincontact-section {
+            
+            width: 600px;
+            height: 500px;
+            margin-bottom: 400px;
+            margin-right: 300px;
+            margin-left: 20px;
+            margin-top: 10px;
+
+    
+           }
+
+           .mainabout-section {
+            width: 745px;
+            height: 400px;
+            margin-bottom: 400px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 15px;
+            
+            
+        }
+        
+        body {
+            font-size: 15px;
+            line-height: 22px;
+
+        }
+
+        #auth-image {
+
+            width: 100px;
+            height: 100px;
+        
+        
+        }
+    }
+
+
+
+
+
+    @media screen and (max-width: 980px) {
+        .mainportfolio-section {
+            width:650px;
+            margin-left: 20px;
+        }
+        #main-container {
+            padding-top: 100px;
+        }
+                  
+            .mainabout-section {
+                width: 600px;
+                height: 400px;
+                margin-bottom: 400px;
+                margin-right: 300ox;
+                margin-left: 20px;
+                margin-top: 10px;
+                
+                
+            }
+            
+            body {
+                font-size: 15px;
+                line-height: 22px;
+
+            }
+
+            #auth-image {
+
+                width: 100px;
+                height: 100px;
+            
+            
+            }
+
+            .maincontact-section {
+            
+             width: 600px;
+             height: 500px;
+             margin-bottom: 300px;
+             margin-right: 300px;
+             margin-left: 20px;
+             margin-top: 10px;
+
+     
+            }
+    }
+
+
+
+            
+         
